@@ -1,4 +1,7 @@
- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <title>E-RecycleBin</title>
 	<link rel='shortcut icon' type='image/x-icon' href='/erecyclebin/icon.ico' />
 <!-- Navigation -->
@@ -63,6 +66,11 @@
         <a href="erecyclebin_opendata.xlsx" class="btn btn-success">Εξαγωγή στο Excel</a>
         <a href="erecyclebin_opendata.sql" class="btn btn-primary">Εξαγωγή σε SQL</a>
     </p>
+  </div>
+    <div class="container alert alert-warning alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Ενημέρωση: </strong>Ο Σύνδεσμος από την Διεύθυνση Κάδου (συντεταγμένες) ανοίγει στο Google Maps
+  </div>
 </div>
 <div class="container well">
 		<div class="row">
@@ -115,7 +123,7 @@
 	        		<?php foreach($customers as $customer) :  ?>
 		        		<tr>
 		        			<td><?= $customer['aa']; ?></td>
-		        			<td><?= $customer['kadosaddress']; ?></td>
+		        			<td><a href="https://www.google.com/maps/search/<?= $customer['kadosaddress']; ?> " target="_blank"><?= $customer['kadosaddress']; ?></a></td>
 		        			<td><?= $customer['date']; ?></td>
 		        			<td><?= $customer['lastcheckdate']; ?></td>
 		        			<td><?= $customer['datafrom']; ?></td>
