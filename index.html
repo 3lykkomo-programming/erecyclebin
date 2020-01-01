@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<link rel='shortcut icon' type='image/x-icon' href='icon.ico' />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>E-RecycleBin</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+    <img src="icon.ico" width="30" height="30" alt="">
+  </a>
+      <a class="navbar-brand" href="#">E-RecycleBin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Αρχική
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./web">Web Version</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Android App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./opendata">Open Data</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact">Επικοινωνία</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">E-RecycleBin</h1>
+      <p class="lead">Το E-RecycleBin είναι μια εφαρμογή που δημιουργήθηκε από την Ομάδα Ρομποτικής & Προγραμματισμού του <b>3ου Γενικού Λυκείου Κομοτηνής</b> με σκοπό την επίλυση περιβαλλοντικών ζητημάτων που απασχολούν την τοπική κοινωνία.</p>
+      <p class="lead">Με το E-RecycleBin οι κάτοικοι της Κομοτηνής καθώς και οι επισκέπτες της, μπορούν να βρουν τον πλησιέστερο μπλε κάδο ανακύκλωσης, να ενημερωθούν για τα ανακυκλώσιμα υλικά και σε περίπτωση σχετικών προβλημάτων να ειδοποιήσουν με email την υπεύθυνη υπηρεσία του δήμου.</p>
+      <p class="lead">Προγραμματισμός:<b> Άγγελος Μιχαήλ Χουβαρδάς</b></p>
+      <p class="lead">Υλοποίηση - Σχεδιασμός: <b>Βασίλειος Ευτυχιάκος, Δημήτριος Αποστολίδης , Άγγελος Μιχαήλ Χουβαρδάς</b></p>
+      <p class="lead">Υπεύθυνοι Καθηγητές:<b> Ανδρονίκη Βερρή, ΠΕ86 - Χουρμούζης Μαργαρίτης, ΠΕ03</b></p>
+      <p class="lead">Ευχαριστούμε το <b>Τμήμα Περιβάλλοντος & Πολιτικής Προστασίας</b> του <b>Δήμου Κομοτηνής</b> για την παραχώρηση των δεδομένων</p>
+  <!-- <h4>Μάθετε περισσότερα...</h4>
+  <br>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#er1">
+          Πόσοι κάδοι υπάρχουν στην εφαρμογή;
+        </a>
+      </div>
+      <div id="er1" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+         Στην εφαρμογή μπορείτε να βρείτε <b>606</b> κάδους ανακύκλωσης. <br><br>
+
+          Η <b>Ομάδα Ρομποτικής & Προγραμματισμού</b> του 3ου Γενικού Λυκείου Κομοτηνής με την βοήθεια της εφαρμογής "E-RecycleBin Admin" που δημιουργήθηκε για την καταγραφή & χαρτογράφηση των κάδων ανακύκλωσης, χαρτογράφησε <b>93 </b>κάδους ανακύκλωσης. 
+          <br><br> 
+          Το τμήμα <b>Περιββάλοντος & Πολιτικής Προστασίας</b> του Δήμου Κομοτηνής μετά από αίτημα μας, μας παραχώρησε τις τοποθεσίες <b>513 </b> κάδων ανακύκλωσης, που τους προσθέσαμε στην εφαρμογή μας.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#er2">
+        Επικοινωνία με το 3ο Γενικό Λύκειο Κομοτηνής
+      </a>
+      </div>
+      <div id="er2" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <b>Διεύθυνση:</b> Φιλίππου 33, Κομοτηνή, Ροδόπη, 69100
+
+<br><br><b>E-mail:</b> </b><a href="mailto:mail@3lyk-komot.rod.sch.gr" target="_blank">mail@3lyk-komot.rod.sch.gr</a>
+
+<br><br><b>Website:</b> <a href="http://3lyk-komot.rod.sch.gr/" target="_blank">3lyk-komot.rod.sch.gr</a>
+
+<br><br><b>Τηλέφωνο:</b> 2531037586
+
+<br><br><b>FAX:</b> 2531072093
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#dkomotinis">
+          Επικοινωνία με τον Δήμο Κομοτηνής
+        </a>
+      </div>
+      <div id="dkomotinis" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <b>Διεύθυνση:</b> Πλ. Βιζυηνού 1, Κομοτηνή, Ροδόπη, 69100
+          <br><br><b>E-mail:</b> <a href="mailto:dkomot@otenet.gr" target="_blank">dkomot@otenet.gr</a>
+          <br><br><b>Website:</b> <a href="https://www.komotini.gr/" target="_blank">komotini.gr</a>
+          <br><br><b>Τηλέφωνο:</b> 2531352400
+          <br><br><b>FAX:</b> 2531022756
+        </div> -->
+    </header> 
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="weblogo.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Web Version</h4>
+            <p class="card-text">Με την web version της εφαρμογής, μπορείτε να εντοπίσετε τον κοντινότερο κάδο ανακύκλωσης </p>
+          </div>
+          <div class="card-footer">
+            <a href="./web" class="btn btn-info">Επισκεφτείτε την...</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="androidlogo.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Android App</h4>
+            <p class="card-text">Με την android εφαρμογή, μπορείτε να εντοπίσετε τον κοντινότερο κάδο ανακύκλωσης καθώς και να ενημερωθείτε για τα ανακυκλώσιμα υλικά και τον τρόπο διαλογής τους.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-secondary">Σύντομα Διαθέσιμη</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="opendatalogo.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Open Data</h4>
+            <p class="card-text">Μέσω της πλατφόρμας Open Data μπορείτε να έχετε πρόσβαση στα δεδομένα της εφαρμογής μας καθώς και να τα εξάγετε σε Excel και SQL (π.χ. συντεταγμένες κάδων)</p>
+          </div>
+          <div class="card-footer">
+            <a href="./opendata" class="btn btn-info">Επισκεφτείτε την...</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="contact.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Επικοινωνία</h4>
+            <p class="card-text">Μπορείτε να επικοινωνήσετε μαζί μας, για αναφορά προβλημάτων καθώς και για να απαντήσουμε στα αιτήματα / ερωτήματά σας</p>
+          </div>
+          <div class="card-footer">
+            <a href="./contact" class="btn btn-danger">Επικοινωνία</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">&copy; 2019 - 3ο Γενικό Λύκειο Κομοτηνής - <i>Ομάδα Ρομποτικής & Προγραμματισμού</i></p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
