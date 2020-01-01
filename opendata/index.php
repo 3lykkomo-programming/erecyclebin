@@ -43,9 +43,9 @@
 	$start = ($page - 1) * $limit;
 	$result = $conn->query("SELECT * FROM erecyclebin_opendata LIMIT $start, $limit");
 	$customers = $result->fetch_all(MYSQLI_ASSOC);
-	$result1 = $conn->query("SELECT count(aa) AS aa FROM erecyclebin_opendata");
+	$result1 = $conn->query("SELECT count(id) AS id FROM erecyclebin_opendata");
 	$custCount = $result1->fetch_all(MYSQLI_ASSOC);
-	$total = $custCount[0]['aa'];
+	$total = $custCount[0]['id'];
 	$pages = ceil( $total / $limit );
 	$Previous = $page - 1;
 	$Next = $page + 1;
@@ -122,7 +122,7 @@
 	        	<tbody>
 	        		<?php foreach($customers as $customer) :  ?>
 		        		<tr>
-		        			<td><?= $customer['aa']; ?></td>
+		        			<td><?= $customer['id']; ?></td>
 		        			<td><a href="https://www.google.com/maps/search/<?= $customer['kadosaddress']; ?> " target="_blank"><?= $customer['kadosaddress']; ?></a></td>
 		        			<td><?= $customer['date']; ?></td>
 		        			<td><?= $customer['lastcheckdate']; ?></td>
