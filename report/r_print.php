@@ -40,8 +40,7 @@
   </div>
 </div>
   <br>
-<div class="alert alert-info" role="alert">
-Για τεχνικά προβλήματα της πλατφόρμας (π.χ λάθος σημείο κάδου, εντοπισμός σφάλματος κτλ.) αποστείλετε την αναφορά προβλήματος στο <a href="mailto:robotics@3lyk-komot.rod.sch.gr" class="alert-link">robotics@3lyk-komot.rod.sch.gr</a>. <br><br>Για θέματα αρμοδίοτητα του Δήμου Κομοτηνής αποστείλετε την αναφορά υπόψην του τμήματος <b>Περιβάλλοντος & Πολιτικής Προστασίας</b> του <b>Δήμου Κομοτηνής</b> στο <a href="mailto:dkomot@otenet.gr" class="alert-link">dkomot@otenet.gr</a>.
+<div class="alert alert-info" role="alert"><h5><b><u>Διευκρινίσεις</b></u></h5>Για τεχνικά προβλήματα της πλατφόρμας (π.χ λάθος σημείο κάδου, εντοπισμός σφάλματος κτλ.) να στείλετε την αναφορά προβλήματος στο <a href="mailto:robotics@3lyk-komot.rod.sch.gr" class="alert-link">robotics@3lyk-komot.rod.sch.gr</a>. <br><br>Για θέματα αρμοδίοτητας του Δήμου Κομοτηνής να στείλετε την αναφορά υπόψην του τμήματος <b>Περιβάλλοντος & Πολιτικής Προστασίας</b> του <b>Δήμου Κομοτηνής</b> στο <a href="mailto:dkomot@otenet.gr" class="alert-link">dkomot@otenet.gr</a>.
 </div>
 </body>
 </html>
