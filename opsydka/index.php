@@ -1,38 +1,50 @@
+  <?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <title>E-RecycleBin</title>
+  <title>Ο.Π.ΣΥ.Δ.Κ.Α | E-RecycleBin</title>
 	<link rel='shortcut icon' type='image/x-icon' href='/erecyclebin/icon.ico' />
 <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<br>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">
-    <img src="/erecyclebin/icon.ico" width="30" height="30" alt="">
   </a>
-      <a class="navbar-brand" href="#">E-RecycleBin</a>
+          <img src="opsydka_logo.png">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/erecyclebin">Αρχική
+            <a class="nav-link active" href="#">Αρχική
             </a>
+            <span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/erecyclebin/web">Web Version</a>
+            <a class="nav-link" href="/erecyclebin/web">E-RecycleBin</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Android App</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Open Data</a>
-                        <span class="sr-only">(current)</span>
-                         <li class="nav-item">
-            <a class="nav-link" href="/erecyclebin/opsydka">Ο.Π.ΣΥ.Δ.Κ.Α</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="/erecyclebin/contact">Επικοινωνία</a>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Ο Λογαριασμός μου
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item-text">Όνομα Χρήστη: <b><?php echo htmlspecialchars($_SESSION["username"]); ?></a></b>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="reset.php">Αλλαγή κωδικού</a>
+          <a class="dropdown-item" href="logout.php">Αποσύνδεση</a>
+        </div>
+      </li>
           </li>
         </ul>
       </div>
@@ -57,27 +69,45 @@
 <head>
 	<br>
 	<br>
-	<title>E-RecycleBin - Open Data</title>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-	<div class="container text-center">
-		 <img src="logo.png" class="center" width="250" height="250" > 
-        <h2 style="color:Tomato;">Open Data</h1>
-    <p>
-        <a href="erecyclebin_opendata.xlsx" class="btn btn-success">Εξαγωγή στο Excel</a>
-        <a href="erecyclebin_opendata.sql" class="btn btn-primary">Εξαγωγή σε SQL</a>
-    </p>
+    <div class="container well">
+    <div class="row">
+      <div class="col-md-10">
+			</div>
+  </div>
+<br>
+<div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#useracc">
+          Στοιχεία Χρήστη
+        </a>
+      </div>
+      <div id="useracc" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <iframe name="userdata" src="data.php?id=<?php echo htmlspecialchars($_SESSION["id"]); ?>" style="height:285px;width:600px;border:none;">
+</iframe>
+</div>
+  <div class="card-footer">
+      <a href="edit_users.php?id=<?php echo htmlspecialchars($_SESSION["id"]); ?>" class="btn btn-info"  target="userdata">Επεξεργασία</a>
+        </div>
+      
+</div>
+
+      </div>
+    </div>
+<br>
   </div>
     <div class="container alert alert-warning alert-dismissible fade show">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     <strong>Ενημέρωση: </strong>Ο Σύνδεσμος από την Διεύθυνση Κάδου (συντεταγμένες) ανοίγει στο Google Maps
   </div>
 </div>
-<div class="container well">
-		<div class="row">
-			<div class="col-md-10">
-				
+
+   <div class="container text-center">
+      
 <nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item"><a class="page-link" href="?page=1">1</a></li>
@@ -96,21 +126,6 @@
     </li>
   </ul>
 </nav>
-
-
-
-
-
-
-
-
-			</div>
-			<div class="text-center" style="margin-top: 20px; " class="col-md-2">
-				<form method="post" action="#">
-					</form>
-				</div>
-		</div>
-		<div style="overflow-y: auto;">
 			<table id="" class="table table-striped table-bordered">
 	        	<thead>
 	                <tr>

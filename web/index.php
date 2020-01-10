@@ -25,7 +25,9 @@
             <a class="nav-link" href="#">Android App</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/erecyclebin/opendata">Open Data</a>
+            <a class="nav-link" href="/erecyclebin/opendata">Open Data</a></li>
+             <li class="nav-item">
+            <a class="nav-link" href="/erecyclebin/opsydka">Ο.Π.ΣΥ.Δ.Κ.Α</a></li>
           <li class="nav-item">
             <a class="nav-link" href="/erecyclebin/contact">Επικοινωνία</a>
           </li>

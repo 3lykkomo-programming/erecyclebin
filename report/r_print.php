@@ -35,12 +35,13 @@
 <div class="card">
   <h5 class="card-header">Περιγραφή Προβλήματος</h5>
   <div class="card-body">
+	      <p class="card-text"><b>Κατηγορία Προβλήματος: </b> <?php echo $_GET["mp1"]; ?> </p>
     <p class="card-text"><?php echo $_GET["problem"]; ?></p>
   </div>
   </div>
 </div>
   <br>
-<div class="alert alert-info" role="alert"><h5><b><u>Διευκρινίσεις</b></u></h5>Για τεχνικά προβλήματα της πλατφόρμας (π.χ λάθος σημείο κάδου, εντοπισμός σφάλματος κτλ.) να στείλετε την αναφορά προβλήματος στο <a href="mailto:robotics@3lyk-komot.rod.sch.gr" class="alert-link">robotics@3lyk-komot.rod.sch.gr</a>. <br><br>Για θέματα αρμοδίοτητας του Δήμου Κομοτηνής να στείλετε την αναφορά υπόψην του τμήματος <b>Περιβάλλοντος & Πολιτικής Προστασίας</b> του <b>Δήμου Κομοτηνής</b> στο <a href="mailto:dkomot@otenet.gr" class="alert-link">dkomot@otenet.gr</a>.
+<div class="alert alert-info" role="alert"><h5><b><u>Διευκρινίσεις</b></u></h5>Για τεχνικά προβλήματα της πλατφόρμας (π.χ λάθος σημείο κάδου, εντοπισμός σφάλματος κτλ.) να στείλετε την αναφορά προβλήματος στο <a href="mailto:robotics@3lyk-komot.rod.sch.gr" class="alert-link">robotics@3lyk-komot.rod.sch.gr</a>. <br><br>Για θέματα αρμοδίοτητας του Δήμου Κομοτηνής να στείλετε την αναφορά υπόψην του τμήματος <b>Περιβάλλοντος & Πολιτικής Προστασίας</b> του <b>Δήμου Κομοτηνής</b> στο <a href="mailto:dimos.ef@komotini.gr" class="alert-link">dimos.ef@komotini.gr</a>.
 </div>
 </body>
 </html>

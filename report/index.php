@@ -93,37 +93,35 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     }
 }
 ?>
- 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>E-RecycleBin / Αναφορά προβλημάτων</title>
-    	<link rel='shortcut icon' type='image/x-icon' href='/erecyclebin/icon.ico' />
+    <head>
+        <title>E-RecycleBin | Αναφορά προβλημάτων</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        .wrapper{
-            width: 500px;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="container-fluid">
+        <div class="container">
+
             <div class="row">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <div class="page-header">
-                            <style type="text/css">
-        body{ font: 14px sans-serif; }
-    </style>
-                        <h1 style="color:MediumSeaGreen;">E-RecycleBin</h1> 
-                        <h2>Αναφορά προβλημάτων</h2>
-                    </div>
-                    <form action="r_print.php" method="get">
-                        <div class="form-group">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <h1>E-RecycleBin | Αναφορά προβλημάτων</h1>
+
+
+<form action="r_print.php" method="get">
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                <div class="form-group">
                             <label>Α/Α Κάδου Ανακύκλωσης</label>
                             <input type="text" name="aakados" class="form-control" value="<?php echo $name; ?>"readonly>
                         </div>
@@ -133,23 +131,69 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                         </div>
                             <label>Πηγή Χαρτογράφησης</label>
                             <input type="text" name="datafrom" class="form-control" value="<?php echo $salary; ?>" readonly> <br>
-                            <label>Ονοματεπώνυμο</label>
-                            <input type="text" name="fullname" class="form-control"> <br>
-                            <label>E-mail</label> 
-                            <input type="text" name="emailuser" class="form-control"> <br>
-                            <label>Τηλέφωνο Επικοινωνίας</label>
-                            <input type="text" name="phonenumber" class="form-control"> <br>
-                           <div class="form-group">
-    <label>Περιγραφή Προβλήματος</label>
-    <textarea class="form-control" name="problem" rows="6"></textarea>
                         </div>
-                        <input type="hidden" name="id" value="<?php echo $id; ?>"/>
-                        <input type="submit" class="btn btn-primary" value="Εκτύπωση Αναφοράς">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_name">Ονοματεπώνυμο</label>
+                                        <input id="form_name" type="text" name="fullname" class="form-control" placeholder="Παρακαλώ εισάγετε το όνομα σας" required="required" data-error="Το ονοματεπώνυμο είναι υποχρεωτικό.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+     
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email</label>
+                                        <input id="form_email" type="email" name="emailuser" class="form-control" placeholder="Εισαγάγετε το email σας" required="required" data-error="Απαιτείται έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Τηλέφωνο Επικοινωνίας</label>
+                                        <input id="form_phone" type="tel" name="phonenumber" class="form-control" placeholder="Εισαγάγετε το τηλέφωνo σας" required="required">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                   <div class="form-group">
+                            <label>Κατηγορία Προβλήματος</label>
+                            <select type="text" class="form-control" name="mp1">
+                                <option>[Π01] - Τεχνικό πρόβλημα εφαρμογής</option>
+                                <option>[Π02] - Λάθος τοποθεσία Κάδου Ανακύκλωσης στην εφαρμογή</option>
+                                <option>[Π03] - Εκ παραδρομής καταχώρηση Κάδου Ανακύκλωσης</option>
+                                <option>[Π04] - Ζητήματα σχετικά με το άδειασμα του Κάδου Ανακύκλωσης</option>
+                                <option>[Π05] - Αναφορά καταστροφής του Κάδου Ανακύκλωσης</option>
+                                <option>[Π06] - Άλλο ζήτημα</option>
+                            </select> </div>
+                             <div class="row">
+                                <div class="col-md-12">
+                                   <div class="form-group">
+                                        <label for="form_message">Περιγραφή Προβλήματος</label>
+                                        <textarea id="form_message" name="problem" class="form-control" placeholder="Εισάγεται μια όσο το δυνατόν αναλυτικότερη περιγραφή" rows="4" required="required" data-error="Η Περιγραφή προβλήματος είναι υποχρεωτική"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Εκτύπωση Αναφοράς">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
 
                     </form>
-                </div>
-            </div>        
-        </div>
-    </div>
-</body>
+
+                </div><!-- /.8 -->
+
+            </div> <!-- /.row-->
+
+        </div> <!-- /.container-->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </body>
 </html>
