@@ -104,6 +104,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     <strong>Ενημέρωση: </strong>Ο Σύνδεσμος από την Διεύθυνση Κάδου (συντεταγμένες) ανοίγει στο Google Maps
   </div>
+  <div class="container alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Προσοχή: </strong>Το Ο.Π.ΣΥ.Δ.Κ.Α ενημερώνει σε <u>πραγματικό χρόνο</u> την πύλη OpenData με τις αλλαγές που πραγματοποιούνται. <br>Ελέγξτε την εγκυρότητα τους πριν προβείτε σε οποιοδήποτε επεξεργασία ή διαγραφή.
+  </div>
 </div>
 
    <div class="container text-center">
@@ -134,6 +138,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	                    <th>Ημερομηνία Καταχώρησης</th>
 	                    <th>Τελευταία Ενημέρωση</th>
 	                    <th>Πηγή Δεδομένων</th>
+                      <th>Ενέργειες</th>
 	              	</tr>
 	          	</thead>
 	        	<tbody>
@@ -144,6 +149,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		        			<td><?= $customer['date']; ?></td>
 		        			<td><?= $customer['lastcheckdate']; ?></td>
 		        			<td><?= $customer['datafrom']; ?></td>
+                  <td>
+                    <a class="btn btn-warning" href="update.php?id=<?= $customer['id']; ?>" role="button">Edit</a>
+                    <a class="btn btn-danger" href="delete.php?id=<?= $customer['id']; ?>" role="button">Delete</a>
+
+
+                    <a  title='Update Record'><span class='glyphicon glyphicon-pencil'></span></a>
+                        <a href="delete.php?id=<?php echo $row["id"]; ?>" title='Delete Record'><i class='material-icons'><span class='glyphicon glyphicon-trash'></span></a>
+                        </td>
 		        		</tr>
 	        		<?php endforeach; ?>
 	        	</tbody>
