@@ -12,6 +12,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>Ο.Π.ΣΥ.Δ.Κ.Α | E-RecycleBin</title>
 	<link rel='shortcut icon' type='image/x-icon' href='/erecyclebin/icon.ico' />
 <!-- Navigation -->
@@ -150,12 +152,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		        			<td><?= $customer['lastcheckdate']; ?></td>
 		        			<td><?= $customer['datafrom']; ?></td>
                   <td>
-                    <a class="btn btn-warning" href="update.php?id=<?= $customer['id']; ?>" role="button">Edit</a>
-                    <a class="btn btn-danger" href="delete.php?id=<?= $customer['id']; ?>" role="button">Delete</a>
-
-
-                    <a  title='Update Record'><span class='glyphicon glyphicon-pencil'></span></a>
-                        <a href="delete.php?id=<?php echo $row["id"]; ?>" title='Delete Record'><i class='material-icons'><span class='glyphicon glyphicon-trash'></span></a>
+                <a class="btn btn-primary" href="view.php?id=<?= $customer['id']; ?>" role="button"> <i class="fa fa-folder-open-o"></i></a>
+                    <a class="btn btn-warning" href="update.php?id=<?= $customer['id']; ?>" role="button"> <i class="fa fa-edit"></i></a>
+                    <a class="btn btn-danger" href="delete.php?id=<?= $customer['id']; ?>" role="button"> <i class="fa fa-trash-o"></i></a>
                         </td>
 		        		</tr>
 	        		<?php endforeach; ?>

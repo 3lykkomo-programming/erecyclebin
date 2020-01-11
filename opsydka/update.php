@@ -30,7 +30,7 @@ require_once "configedit.php";
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Update Record</title>
+    <title>Ενημέρωση Κάδου</title>
 </head>
 <body>
 
@@ -39,6 +39,7 @@ require_once "configedit.php";
                 <div class="col-lg-12">
                     <div class="page-header">
                         <h2>Ενημέρωση Κάδου</h2>
+                        <hr>
                     </div>
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group">
@@ -64,8 +65,8 @@ require_once "configedit.php";
                         <input type="hidden" name="lastusereditid" value="<?php echo htmlspecialchars($_SESSION["id"]); ?>"/>
                         <input type="hidden" name="lastusereditdate" class="form-control" value="<?php echo date('d-m-Y / H:i:s'); ?>">
                         <input type="hidden" name="id" value="<?php echo $row["id"]; ?>"/>
-                        <input type="submit" class="btn btn-primary" value="Submit">
-                        <a href="index.php" class="btn btn-default">Cancel</a>
+                        <input type="submit" class="btn btn-primary" value="Υποβολή">
+                        <a href="index.php" class="btn btn-default">Ακύρωση</a>
                     </form>
                 </div>
             </div>  

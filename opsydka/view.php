@@ -30,7 +30,7 @@ require_once "configedit.php";
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Update Record</title>
+    <title>Αναλυτική Αναφορά Κάδου</title>
 </head>
 <body>
 
@@ -39,6 +39,7 @@ require_once "configedit.php";
                 <div class="col-lg-12">
                     <div class="page-header">
                         <h2>Αναλυτική Αναφορά Κάδου</h2>
+                        <hr>
                     </div>
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group">
@@ -84,7 +85,7 @@ require_once "configedit.php";
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Κλείσιμο</button>
         </div>
     </div>
 </div> 
