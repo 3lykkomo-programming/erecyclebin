@@ -191,4 +191,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	})
 </script>
 </body>
+<footer class="py-5 bg-dark">
+    <div class="container">
+<hr style="border-top: 1px solid #ccc; background: transparent;">
+      <p class="m-0 text-center text-white"><b>Προγραμματισμός:</b> Άγγελος Μιχαήλ Χουβαρδάς</p>
+      <p class="m-0 text-center text-white"><b>Υλοποίηση - Σχεδιασμός:</b> Βασίλειος Ευτυχιάκος, Άγγελος Μιχαήλ Χουβαρδάς
+</p><br>
+
+  <p class="m-0 text-center text-white">Έκδοση: 2.2</p>
+      <p class="m-0 text-center text-white">&copy; 3ο Γενικό Λύκειο Κομοτηνής - <i>Ομάδα Ρομποτικής & Προγραμματισμού</i></p>
+      <hr style="border-top: 1px solid #ccc; background: transparent;">
+    </div>
+    <!-- /.container -->
+  </footer>
 </html>
