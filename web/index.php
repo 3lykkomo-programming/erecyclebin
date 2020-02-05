@@ -17,6 +17,10 @@
             <a class="nav-link" href="/erecyclebin">Αρχική
             </a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/erecyclebin/news">Ανακοινώσεις
+            </a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Web Version</a>
             <span class="sr-only">(current)</span>
@@ -35,4 +39,5 @@
       </div>
     </div>
   </nav>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"9afc71b5c97814a839b7b3148","lid":"1d4c9f5dbc","uniqueMethods":true}) })</script>
 <iframe src="https://www.google.com/maps/d/embed?mid=1x8myaZdWGb6cIK7zR9bIoaW3UmYPYI2Z" width="100%" height="100%"></iframe>

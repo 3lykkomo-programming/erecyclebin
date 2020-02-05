@@ -3,6 +3,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <title>E-RecycleBin</title>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"9afc71b5c97814a839b7b3148","lid":"1d4c9f5dbc","uniqueMethods":true}) })</script>
 	<link rel='shortcut icon' type='image/x-icon' href='/erecyclebin/icon.ico' />
 <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -18,6 +19,10 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="/erecyclebin">Αρχική
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/erecyclebin/news">Ανακοινώσεις
             </a>
           </li>
           <li class="nav-item">
