@@ -37,7 +37,7 @@
             <a class="nav-link" href="./web">Web Version</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Android App</a>
+            <a class="nav-link" href="./android">Android App</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./opendata">Open Data</a></li>
@@ -191,7 +191,7 @@
             <p class="card-text">Με την android εφαρμογή, μπορείτε να εντοπίσετε τον κοντινότερο κάδο ανακύκλωσης καθώς και να ενημερωθείτε για τα ανακυκλώσιμα υλικά και τον τρόπο διαλογής τους.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-secondary">Σύντομα Διαθέσιμη</a>
+            <a href="./android" class="btn btn-info">Επισκεφτείτε την...</a>
           </div>
         </div>
       </div>

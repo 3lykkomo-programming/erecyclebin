@@ -26,7 +26,7 @@
             <span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Android App</a>
+            <a class="nav-link" href="/erecyclebin/android">Android App</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/erecyclebin/opendata">Open Data</a></li>

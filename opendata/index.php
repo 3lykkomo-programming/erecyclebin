@@ -29,7 +29,7 @@
             <a class="nav-link" href="/erecyclebin/web">Web Version</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Android App</a>
+            <a class="nav-link" href="/erecyclebin/android">Android App</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Open Data</a>
