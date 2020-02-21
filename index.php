@@ -57,7 +57,10 @@
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
       <h1 class="display-3">E-RecycleBin</h1>
-      <p class="lead">Το E-RecycleBin είναι μια εφαρμογή που δημιουργήθηκε από μαθητές της Ομάδας Ρομποτικής & Προγραμματισμού του <b>3ου Γενικού Λυκείου Κομοτηνής</b> με σκοπό την επίλυση περιβαλλοντικών ζητημάτων που απασχολούν την τοπική κοινωνία.</p>
+      <p class="lead">Οι Μαθητές της Ομάδας Ρομποτικής και Προγραμματισμού του <b>3ου Γενικού Λυκείου Κομοτηνής</b>, με την
+βοήθεια των υπεύθυνων εκπαιδευτικών και θέλοντας να ενισχύσουν την προσπάθεια, που γίνεται τα
+τελευταία χρόνια να ενδυναμωθεί η περιβαλλοντική συνείδηση των συμπολιτών μας, δημιούργησαν την
+εφαρμογή “E-RecycleBin”</p>
       <p class="lead">Με το E-RecycleBin οι κάτοικοι της Κομοτηνής καθώς και οι επισκέπτες της, μπορούν να εντοπίσουν τον πλησιέστερο μπλε κάδο ανακύκλωσης, να ενημερωθούν για τα ανακυκλώσιμα υλικά και σε περίπτωση σχετικών προβλημάτων να ειδοποιήσουν με email την υπεύθυνη υπηρεσία του Δήμου.</p>
       <p class="lead">Προγραμματισμός:<b> Άγγελος Μιχαήλ Χουβαρδάς</b></p>
       <p class="lead">Υλοποίηση - Σχεδιασμός: <b>Βασίλειος Ευτυχιάκος, Άγγελος Μιχαήλ Χουβαρδάς</b></p>
@@ -119,7 +122,11 @@
       </div>
       <div id="er3" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          Η εφαρμογή αναπτύχθηκε στο πλαίσιο του διαγωνισμού <u>Vodafone Generation Next</u> με σκοπό να  βοηθήσει τους πολίτες και τους επισκέπτες της πόλης μας να μπορούν εύκολα να βρουν τον πλησιέστερο μπλε κάδο ανακύκλωσης, να ενημερωθούν για θέματα ανακύκλωσης και σε περίπτωση σχετικών προβλημάτων να ειδοποιήσουν την υπεύθυνη υπηρεσία του Δήμου.
+			Η εφαρμογή αναπτύχθηκε στο πλαίσιο του διαγωνισμού <u><a href="https://www.vodafonegenerationnext.gr/diagonismos/fthinoporo-2019/protasi/67" target="_blank">Vodafone Generation Next<a></u> με σκοπό να  βοηθήσει τους πολίτες και τους επισκέπτες της πόλης μας να μπορούν εύκολα να βρουν τον πλησιέστερο μπλε κάδο ανακύκλωσης, να ενημερωθούν για θέματα ανακύκλωσης και σε περίπτωση σχετικών προβλημάτων να ειδοποιήσουν την υπεύθυνη υπηρεσία του Δήμου.
+			<br><br>
+			Δείτε περισσότερα στο <a href="https://www.vodafonegenerationnext.gr/diagonismos/fthinoporo-2019/protasi/67" target="_blank">vodafonegenerationnext.gr</a>
+<br><br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FzECpnhctuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         </div>
         </div> 
@@ -224,6 +231,75 @@
     </div>
     <!-- /.row -->
   </div>
+  <div class="container">
+<ul class="list-group">
+  <li class="list-group-item list-group-item-warning">
+  <section>        
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wow fadeInRight" data-wow-delay="0.5s">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="wow fadeInDown" data-wow-delay="0.5s" >
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><i class="fa fa-fw fa-check"></i> Eγχειρίδια χρήσης</h4>
+                        </div>
+                        <div class="panel-body">
+                          <hr>
+                            <p>*
+<a href="https://drive.google.com/file/d/1vpQ0up5q5YpYjaAO8-d1pIJUu_hYM8k8/view" target="_blank">Εγχειρίδιο υποβολής προβλημάτων</a>
+<hr>
+
+
+
+                            </p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <section class="wow fadeInDown" data-wow-delay="0.5s">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><i class="fa fa-fw fa-gift"></i> Βίντεο</h4>
+                        </div>
+                        <div class="panel-body">
+                          <hr>
+                            <p>* Σύντομα Διαθέσιμα
+  <!--<a href="#" target="_blank">Οδηγίες υποβολής προβλημάτων --> </a><hr>
+
+
+
+
+
+
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <div class="wow fadeInDown" data-wow-delay="0.5s">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><i class="fa fa-fw fa-compass"></i>Ερωτηματολόγιο</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Θα χαιρόμασταν αν αφιερώνατε λίγο χρόνο για να μας αξιολογήσετε. Στο παρακάτω ερωτηματολόγιο μπορείτε να υποβάλλετε τα σχόλια, τις ιδέες σας και ό,τι άλλο θεωρείτε ότι μπορεί να μας βοηθήσει.
+</p>
+                            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__SYoxW5UNTdPSUM5Nlc3SkdITjRGQkUzUkE4U1dUTy4u" target="_blank" class="btn btn-primary">Αξιολογείστε μας...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> </li> </div> <br>
 
   <!-- /.container -->
 

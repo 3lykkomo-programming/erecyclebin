@@ -96,8 +96,8 @@
                         <img class="img-fluid mb-5" src="logo.png" alt="Value App" style="width:37%"/>
                         <h1 class="text-large pt-1 mb-5">Η Εφαρμογή που κάνει την ανακύκλωση πιο εύκολη</h1>
                         <p>
-                            <button type="button" class="btn btn-outline-success btn-lg px-5 mr-md-4 mr-sm-0 btn-rounded strong mb-3">Σύντομα Διαθέσιμη</button>
-                            <a href="/erecyclebin" class="btn btn-outline-default btn-lg px-5 btn-rounded strong mb-3">Μάθετε περισσότερα..</a>
+                            <button type="button" class="btn btn-outline-success btn-lg px-5 mr-md-4 mr-sm-0 btn-rounded strong mb-3">Σύντομα διαθέσιμη στο Play Store</button>
+                            <a href="ERecyclebin.apk" class="btn btn-default btn-lg">Κατεβάστε την εφαρμογή (.apk)</a>
                         </p>
 
                         <!-- <div class="icons">
