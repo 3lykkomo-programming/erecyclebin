@@ -233,7 +233,7 @@
   </div>
   <div class="container">
 <ul class="list-group">
-  <li class="list-group-item list-group-item-warning">
+  <li class="list-group-item list-group-item-default">
   <section>        
     <div class="container">
         <div class="row">
